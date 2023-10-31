@@ -16,4 +16,18 @@
 .h5847{
     height: 1px;
 }
+.description-step-box p{
+    column-count: 2;
+}
+.tabs{
+    min-height: 300px;
+    max-height: 300px;
+}
+.tabs .steps-card .steps-box .steps-items.active{
+    color: var(--blue);
+
+}
+.tabs .steps-card .steps-box .steps-items.active .border-bottom{
+    border-bottom: 1px solid var(--blue);
+}
 /* end informatics */
