@@ -1,3 +1,5 @@
+@import url("https://farsifont.github.io/css/iranyekan.css");
+@import url("https://farsifont.github.io/css/iranyekan-farsi-numbers.css");
 @import url(../css/style.css);
 /* colors */
 
@@ -21,15 +23,19 @@
 }
 .bg-blue900{
     background-color: #2f59a5;
-
 }
 .bg-blue {
     background-color: #02a9f0;
-
 }
 .bg-gray{
     background-color: #979797;
 }
 .bg-blue100{
     background-color: #cce3f1;
+}
+.text-xs{
+    font-size: 12px;
+}
+.fs-7 {
+    font-size: 0.825rem;
 }
