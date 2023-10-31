@@ -1,0 +1,35 @@
+@import url(../css/style.css);
+/* colors */
+
+:root{
+    --blue:#02a9f0;
+    --blue100:#cce3f1;
+    --blue900:#2f59a5;
+    --gray:#979797;
+}
+
+
+/* global */
+.text-blue900{
+    color: #2f59a5;
+}
+.text-blue {
+    color: #02a9f0;
+}
+.text-gray{
+    color: #979797;
+}
+.bg-blue900{
+    background-color: #2f59a5;
+
+}
+.bg-blue {
+    background-color: #02a9f0;
+
+}
+.bg-gray{
+    background-color: #979797;
+}
+.bg-blue100{
+    background-color: #cce3f1;
+}

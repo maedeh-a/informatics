@@ -1,0 +1,19 @@
+/* informatics */
+#intro{
+    max-height: 600px;
+    min-height: 600px;
+}
+#intro .intro-text{
+    padding-top: 25%;
+}
+#solutions .links-box .link-box{
+    min-width: 110px;
+    max-width: 110px;
+    min-height: 98px;
+    max-height: 98px;
+
+}
+.h5847{
+    height: 1px;
+}
+/* end informatics */
