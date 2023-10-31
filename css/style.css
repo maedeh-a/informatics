@@ -30,8 +30,8 @@
 .tabs{
     min-height: 300px;
 }
-.tabs .steps-card .steps-box .steps-items.active{
-    color: var(--blue);
+.tabs .steps-card .steps-box .steps-items.active *{
+    color: var(--blue) !important;
 
 }
 .tabs .steps-card .steps-box .steps-items.active .border-bottom{
