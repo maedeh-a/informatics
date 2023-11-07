@@ -42,6 +42,15 @@
 .tabs .steps-card .steps-box .steps-items.active .border-bottom{
     border-bottom: 1px solid var(--blue);
 }
+#intro .img-bg{
+    inset: 0;
+}
+#intro .bg-opacity {
+    background-color:#1277d047;
+    inset: 0;
+    position: absolute;
+    height: 100%;
+}
 /* end informatics */
 @media (max-width: 768px) {
     #intro {
