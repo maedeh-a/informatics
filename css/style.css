@@ -36,8 +36,13 @@
 .description-step-box p {
     column-count: 2;
     column-gap: 32px;
-    max-height: 210px;
+    max-height: 350px;
     column-fill: auto;
+    text-align: justify;
+    line-height: 25px;
+}
+.group-Informatics-step-box p ,.description-step-box2 p{
+    max-height: 320px;
     text-align: justify;
     line-height: 25px;
 }
@@ -50,6 +55,15 @@
 }
 .tabs .steps-card .steps-box .steps-items.active .border-bottom{
     border-bottom: 1px solid var(--blue);
+}
+#intro .img-bg{
+    inset: 0;
+}
+#intro .bg-opacity {
+    background-color:#1277d047;
+    inset: 0;
+    position: absolute;
+    height: 100%;
 }
 /* end informatics */
 @media (max-width: 768px) {
