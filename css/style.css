@@ -2,18 +2,32 @@
 #intro{
     height: 100vh;
     height: 100svh;
-    padding-block: 15%;
+    padding-block: 18%;
+}
+.img-container{
+    z-index: 2;
+}
+.img-container::after {
+    content: " ";
+    right: 0;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    z-index: 3;
+    background: linear-gradient(-90deg, #0188bb 0%, transparent 84%)
 }
 .links-box .link-box{
-    min-width: 110px;
-    max-width: 110px;
-    min-height: 98px;
-    max-height: 98px;
+    width: 200px;
+    height: 200px;
     transition: 0.2s;
 }
 .links-box .link-box.active,
 .links-box .link-box:hover {
     background-color: var(--blue);
+}
+.intro-text h1{
+    font-size: calc(4vw + 0.6rem);
 }
 
 .h5847{
@@ -76,4 +90,9 @@
         column-count: 1;
         max-height: max-content;
     }
+        .links-box .link-box {
+            width: 140px;
+            height: 140px;
+            transition: 0.2s;
+        }
 }
