@@ -36,7 +36,7 @@
 .description-step-box p {
     column-count: 2;
     column-gap: 32px;
-    max-height: 350px;
+    max-height: 390px;
     column-fill: auto;
     text-align: justify;
     line-height: 25px;
@@ -49,7 +49,7 @@
 .description-step-box3 p{
     column-count: 2;
     column-gap: 27px;
-    max-height: 242px;
+    max-height: 300px;
     column-fill: auto;
     text-align: justify;
     line-height: 25px;
@@ -86,13 +86,22 @@
     #intro {
             padding-block: 30%;
         }
-    body .description-step-box p {
+    body .description-step-box p, body .description-step-box3 p {
         column-count: 1;
         max-height: max-content;
     }
+    
         .links-box .link-box {
             width: 140px;
             height: 140px;
             transition: 0.2s;
         }
+}
+@media (max-width: 1280px) and (min-width: 992px){
+    .description-step-box p {
+        min-height: 405px;
+    }
+    .description-step-box3 p {
+        min-height: 350px;;
+    }
 }
