@@ -8,27 +8,31 @@
     --blue100:#cce3f1;
     --blue900:#2f59a5;
     --gray:#979797;
+    --gray100:#bbb;
 }
 
 
 /* global */
 .text-blue900{
-    color: #2f59a5;
+    color:var(--blue900)
 }
 .text-blue {
-    color: #02a9f0;
+    color:var(--blue)
 }
 .text-gray{
-    color: #979797;
+    color:var(--gray)
 }
 .bg-blue900{
-    background-color: #2f59a5;
+    background-color:var(--blue900)
 }
 .bg-blue {
-    background-color: #02a9f0;
+    background-color:var(--blue)
 }
 .bg-gray{
-    background-color: #979797;
+    background-color:var(--gray)
+}
+.bg-gray100 {
+    background-color:  var(--gray100);
 }
 .bg-blue100{
     background-color: #cce3f1;
