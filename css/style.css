@@ -75,7 +75,7 @@
     height: 100%;
 }
 #intro .bg-opacity-gradient {
-    background-image: linear-gradient(to right, rgba(255, 0, 0, 0), #0188bb);
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(122, 126, 128, 0.5),#0188bb);
     inset: 0;
     position: absolute;
     height: 100%;
