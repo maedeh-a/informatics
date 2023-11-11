@@ -1,17 +1,30 @@
-@import url("https://farsifont.github.io/css/iranyekan.css");
-@import url("https://farsifont.github.io/css/iranyekan-farsi-numbers.css");
+/* @import url("https://farsifont.github.io/css/iranyekan.css"); */
+/* @import url("https://farsifont.github.io/css/iranyekan-farsi-numbers.css"); */
 @import url(../css/style.css);
-/* colors */
 
+/* Font */
+@font-face {
+    font-family: 'FontMan';
+    src: url('../font/BNazanin.ttf') format('truetype'),
+        url('../font/BNazanin.woff') format('woff'),
+}
+
+body *, * *{
+    font-family: FontMan;
+}
+/* colors */
 :root{
     --blue:#02a9f0;
     --blue100:#cce3f1;
-    --blue900:#2f59a5;
+    --blue900:#2f50a1;
+    --blue900-hover:#2f59a5;
     --gray:#979797;
     --gray100:#bbb;
 }
 
-
+*{
+  transition: background 0.2s;  
+}
 /* global */
 .text-blue900{
     color:var(--blue900)
@@ -24,6 +37,9 @@
 }
 .bg-blue900{
     background-color:var(--blue900)
+}
+.bg-blue900:hover{
+    background-color: var(--blue900-hover)
 }
 .bg-blue {
     background-color:var(--blue)
@@ -48,4 +64,14 @@
 }
 .text-shadow-md{ 
     text-shadow: 0 0 12px #000;
+}
+.footer-bar{
+    height: 28px;
+    margin-bottom: 16px;
+}
+.footer-bar img {
+    width: 100%;
+    position: absolute;
+    height: 40px;
+    inset: 0;
 }

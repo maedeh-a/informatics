@@ -1,19 +1,20 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>درباره ما</title>
     <!-- cdn -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="../css/bootstrap.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/global.css">
 </head>
+
 <body>
     <!-- intro -->
     <section id="intro" class=" position-relative z-0">
         <!-- imgs -->
-        <div class="bg-opacity z-2"></div>
+        <div class="bg-opacity-gradient z-2"></div>
         <div class="img-bg position-absolute z-1">
             <img src="../img/about-us/introduction.jpg" class="object-fit-cover w-100 h-100" alt="">
         </div>
@@ -25,12 +26,16 @@
         </div>
         <div class="container h-100 z-3 position-relative">
             <div class="d-flex h-100 align-items-lg-end align-items-center">
-                <div class="d-flex flex-column align-items-lg-start align-items-center justify-content-start intro-text w-100">
-                    <h1 class="text-white text-shadow-md"> درباره ما</h1>
+                <div
+                    class="d-flex flex-column align-items-lg-start align-items-center justify-content-start intro-text w-100">
+                    <h1 class="text-white text-shadow-md fw-semibold"> درباره ما</h1>
                     <div class=" d-flex align-items-center mt-3">
-                        <a href="" class="text-white bg-blue900 px-4 py-1 fs-6 mx-2 text-decoration-none rounded-2">تماس با
+                        <a href=""
+                            class="text-white bg-blue900 px-4 py-1 fs-4 mx-2 text-decoration-none rounded-2 fw-semibold">تماس
+                            با
                             ما</a>
-                        <a href="" class="text-white bg-blue900 px-4 py-1 fs-6 mx-2 text-decoration-none rounded-2">
+                        <a href="" onclick="openTab2()"
+                            class="text-white bg-blue900 px-4 py-1 fs-4 mx-2 text-decoration-none rounded-2 fw-semibold">
                             محصولات و خدمات
                         </a>
                     </div>
@@ -47,381 +52,432 @@
             </div>
             <!-- tabs -->
             <div class="tabs my-5">
-                <div class="row">
+                <div class="row row-gap-5">
                     <div class="col-lg-4 col-12">
                         <div class="steps-card tabs tab-step d-flex ">
-    
+
                             <div class="steps-box d-flex flex-column tab-btns-step w-100 ">
-    
+
                                 <button
                                     class="steps-items bg-white rounded-2 p-1  border-0 align-items-center d-flex flex-row active btn-step active"
                                     data-tab="STEP1" data-image-name="introduction.jpg">
                                     <div
-                                        class="steps-content border-1 border-bottom border-primary-subtle w-100 pb-1 mx-lg-1 mx-0  d-flex flex-column align-items-start">
-    
-                                        <span class="text-step2 fw-bold  samll text-center  text-primary-emphasis">
-                                            معرفی 
-                                         </span>
+                                        class="steps-content  w-100 pb-1 mx-lg-1 mx-0  d-flex flex-column align-items-start">
+
+                                        <span class="text-step2 fw-bold  text-end  text-blue900 fs-4">
+                                            معرفی
+                                        </span>
                                     </div>
                                 </button>
-    
+
                                 <button
                                     class="steps-items bg-white rounded-2 p-1  border-0 align-items-center d-flex flex-row btn-step"
                                     data-tab="STEP2" data-image-name="products_and_services.jpg">
-    
+
                                     <div
-                                        class="steps-content border-1 border-bottom border-primary-subtle w-100 pb-1 mx-lg-1 mx-0  d-flex flex-column align-items-start">
-    
-                                        <span class="text-step2 fw-bold  samll text-center  text-primary-emphasis">
-                                                محصولات و خدمات
+                                        class="steps-content  w-100 pb-1 mx-lg-1 mx-0  d-flex flex-column align-items-start">
+
+                                        <span class="text-step2 fw-bold  text-end  text-blue900 fs-4">
+                                            محصولات و خدمات
                                         </span>
                                     </div>
                                 </button>
-    
-    
-    
+
+
+
                                 <button
                                     class="steps-items bg-white rounded-2 p-1  border-0 align-items-center d-flex flex-row btn-step"
                                     data-tab="STEP3" data-image-name="achievement-service-group.jpg">
-    
+
                                     <div
-                                        class="steps-content border-1 border-bottom border-primary-subtle w-100 pb-1 mx-lg-1 mx-0  d-flex flex-column align-items-start">
-    
-                                        <span class="text-step2 fw-bold  samll text-center  text-primary-emphasis">
-                                              دستاورد های گروه خدمات انفورماتیک
+                                        class="steps-content  w-100 pb-1 mx-lg-1 mx-0  d-flex flex-column align-items-start">
+
+                                        <span class="text-step2 fw-bold  text-end  text-blue900 fs-4">
+                                            دستاورد های گروه خدمات انفورماتیک
                                         </span>
                                     </div>
                                 </button>
-    
-    
-    
+
+
+
                                 <button
                                     class="steps-items bg-white rounded-2 p-1  border-0 align-items-center d-flex flex-row btn-step"
                                     data-tab="STEP4" data-image-name="informatics-services.jpg">
-    
+
                                     <div
-                                        class="steps-content border-1 border-bottom border-primary-subtle w-100 pb-1 mx-lg-1 mx-0  d-flex flex-column align-items-start">
-    
-                                        <span class="text-step2 fw-bold  samll text-center  text-primary-emphasis">  
-                                            گروه خدمات اینفورماتیک 
+                                        class="steps-content  w-100 pb-1 mx-lg-1 mx-0  d-flex flex-column align-items-start">
+
+                                        <span class="text-step2 fw-bold  text-end  text-blue900 fs-4">
+                                            گروه خدمات انفورماتیک
                                         </span>
                                     </div>
-                                </button><button class="steps-items bg-white rounded-2 p-1  border-0 align-items-center d-flex flex-row btn-step"
+                                </button><button
+                                    class="steps-items bg-white rounded-2 p-1  border-0 align-items-center d-flex flex-row btn-step"
                                     data-tab="STEP5" data-image-name="finik.jpg">
-                                
+
                                     <div
-                                        class="steps-content border-1 border-bottom border-primary-subtle w-100 pb-1 mx-lg-1 mx-0  d-flex flex-column align-items-start">
-                                
-                                        <span class="text-step2 fw-bold  samll text-center  text-primary-emphasis">
+                                        class="steps-content  w-100 pb-1 mx-lg-1 mx-0  d-flex flex-column align-items-start">
+
+                                        <span class="text-step2 fw-bold  text-end  text-blue900 fs-4">
                                             آی فینیک
                                         </span>
                                     </div>
                                 </button>
-    
-    
-    
+
+
+
                                 <button
                                     class="steps-items bg-white rounded-2 p-1  border-0 align-items-center d-flex flex-row btn-step"
                                     data-tab="STEP6" data-image-name="customers.jpg">
-    
+
                                     <div
-                                        class="steps-content border-1 border-bottom border-primary-subtle w-100 pb-1 mx-lg-1 mx-0  d-flex flex-column align-items-start">
-    
-                                        <span class="text-step2 fw-bold  samll text-center  text-primary-emphasis">  
+                                        class="steps-content  w-100 pb-1 mx-lg-1 mx-0  d-flex flex-column align-items-start">
+
+                                        <span class="text-step2 fw-bold  text-end  text-blue900 fs-4">
                                             مشتریان
                                         </span>
                                     </div>
                                 </button>
-    
-    
-                              
-    
-    
-    
-    
+
+
+
+
+
+
+
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-8 col-12 h-100">
                         <div class="tabs-items-step bg-white rounded-2 px-lg-3 mb-3">
                             <div class="d-flex step1-box  align-items-center" id="STEP1">
-    
+
                                 <div class="dec-step-box mx-lg-1 mx-3">
-                                    <div class="head-step-box mb-3 d-flex align-items-center mb-3">
-    
-                                        <span class="text-primary-emphasis  fw-bold p-1"> 
+                                    <div class="head-step-box mb-3 d-flex align-items-center mb-3 row-gap-5">
+
+                                        <span class="text-info fw-bold p-1  fs-2 ">
                                             معرفی
                                         </span>
                                     </div>
                                     <div
                                         class="description-step-box d-flex flex-column text-primary-emphasis text-opacity-75">
-                                        <p class="text text-gray900 mb-4 text-xs ">
-                                            ﺷﺮکﺖ ﺧﺪﻣﺎت اﻧﻔﻮرﻣﺎﺗﯿک )ﺳﻬﺎﻣﻰ ﻋﺎم( ﺑﻪﻋﻨﻮان
-                                            ﯾکی از زﯾﺮﻣﺠﻤﻮﻋﻪﻫﺎي ﺷﺮکﺖ ﻣﻠی اﻧﻔﻮرﻣﺎﺗﯿک و ﺑﻪ
-                                            ﻣﻨﻈﻮر اﺟﺮاي »ﻃﺮح ﺟﺎﻣﻊ اﺗﻮﻣﺎﺳﯿﻮن ﺑﺎﻧکی کﺸﻮر« در
-                                            آذر ﻣﺎه ﺳﺎل 1372ﻓﻌﺎﻟﯿﺖ ﺧﻮد را آﻏﺎز ﻧﻤﻮد. ﺑﺎ ﺗﺎﺳﯿﺲ
-                                            اﯾﻦ ﺷﺮکﺖ، ﻧﻮﺳﺎزي و ﻣﺪرﻧﯿﺰهکﺮدن ﺑﺨﺶ ﻫﺎي
-                                            ﻣﺨﺘﻠﻒ ﻧﻈﺎم ﺑﺎﻧکی کﺸﻮر وارد ﻣﺮﺣﻠﻪ ﺟﺪﯾﺪي ﺷﺪ.
-                                            ﻣﺮﺣﻠﻪاي کﻪ ﻃی آن ﺑﺎ ﺑﻬﺮهگﯿﺮي از ﺧﺪﻣﺎت و اﻣکﺎﻧﺎت
-                                            ﻣﻠﻰ ﺷﺮکﺖ ﻫﻤکﺎرى ﺑﺎ و ﻓﻨﺎوراﻧﻪ ﺑﺎزوي اﯾﻦ
-                                            اﻧﻔﻮرﻣﺎﺗﯿک و ﺑﺎﻧک ﻣﺮکﺰى ج.ا.ا، ﺳﺎﺧﺘﺎر ﻓﺮﺳﻮده و
-                                            ﺳﻨﺘﻰ ﺳﯿﺴﺘﻢ ﺑﺎﻧکی کﺸﻮر ﺑﻪﺗﺪرﯾﺞ ﺗﺒﺪﯾﻞ ﺑﻪ
-                                            ﺳﯿﺴﺘﻤی ﺑﻪروز و کﺎرآﻣﺪ ﺷﺪه اﺳﺖ.
-                                            ﺑﺎﻧکﻰ ﻧﻈﺎم ﺑﻠﻮغ ﺑﺎ ﻫﻤگﺎم و ﺗﺤﻮل پﺮ ﻣﺴﯿﺮى در ﺷﺮکﺖ
-                                            کﺸﻮر، ﻃﻰ ﺳﻪ دﻫﻪ از ﻋﻤﺮ پﺮ دﺳﺘﺎورد ﺧﻮد، ﺑﺎ پﯿﻮﻧﺪ ﻓﻦ
-                                            ﺑﺎﻧکﻰ، رﺷﺪ آورى ﻫﺎى اﻃﻼﻋﺎﺗﻰ و ارﺗﺒﺎﻃﻰ ﺑﺎ کﺎرکﺮدﻫﺎى
-                                            ﻣﺘﻮازن اﯾﻦ ﻓﻨﺎورى ﻫﺎى ﻧﻮﯾﻦ را در ﺟﺎﻣﻌﻪ اﻣکﺎنپﺬﯾﺮ
-                                            ﺳﺎﺧﺘﻪ اﺳﺖ. ﻫﻤچﻨﯿﻦ اﯾﻦ ﺷﺮکﺖ ﺑﺎ اراﺋﻪى ﺧﺪﻣﺎت
-                                            ﯾکپﺎرچﻪ ﺑﻪ ﺑﺰرگﺗﺮﯾﻦ ﺑﺎﻧکﻫﺎى کﺸﻮر، ﺑﺎر ﺑﺨﺶ
-                                            ﺑﺰرگﻰ از ﺧﻮدکﺎرﺳﺎزى اﻣﻮر ﺑﺎﻧکﻰ را ﺑﺮ ﻋﻬﺪه دارد.
-                                            ﻃﯿﻒ وﺳﯿﻊ ﺧﺪﻣﺎﺗﻰ کﻪ اﯾﻦ ﺷﺮکﺖ در ﺣﻮزه ﻧﻈﺎمﻫﺎى
-                                            پﺮداﺧﺖ اراﺋﻪ ﻣﻰکﻨﺪ، ﺑﻪ ﻫﻤﺮاه پﺎﯾﺪارى، اﻣﻨﯿﺖ و
-                                            کﯿﻔﯿﺖ ﺑﺎﻻى ﺳﺮوﯾﺲ ﻫﺎى ﻣﺰﺑﻮر ﺑﺎﻋﺚ ﺷﺪه ﺗﺎ آﺣﺎد
-                                            ﺗکﯿﻪ ﻧﻤﺎﯾﻨﺪ. ﻣﺎﻟﻰ-ﺑﺎﻧکﻰ ﺻﻨﻌﺖ ﺑﻪ ﺑﺘﻮاﻧﻨﺪ ﺟﺎﻣﻌﻪ
-                                            ﺧﻂ ﻣﺸﻰ ﺷﺮکﺖ در ﺟﺬب ﺟﻮاﻧﺎن و ﻧﯿﺮوﻫﺎى ﻣﺴﺘﻌﺪ،
-                                            آﻣﻮزش و اﻧﺘﻘﺎل داﻧﺶ ﺑﻪ درون ﻣﺠﻤﻮﻋﻪ، در اﺧﺘﯿﺎر
-                                            ﻣﻠﻰ و ﻧﯿﺰ_داﺷﺘﻦ کﺪ ﻣﻨﺒﻊ کﻠﯿﻪ ﺳﺎﻣﺎﻧﻪﻫﺎى ﺣﺎکﻤﯿﺘﻰ
-                                            ﻣﺤﺼﻮﻻت ﻏﯿﺮ ﺣﺎکﻤﯿﺘﻰ ﺑﺪون ﻫﯿچگﻮﻧﻪ واﺑﺴﺘگﻰ ﺑﻪ
-                                            ﺧﺎرج از کﺸﻮر، ﺑﻬﺮهگﯿﺮى از داﻧﺶ ﺑﻮﻣﻰ و ... ﻫﻤگﻰ
-                                            ﻣﻨﺠﺮ ﺑﻪ ﺧﻮدکﻔﺎﯾﻰ در ﺗﻮﻟﯿﺪ و پﯿﺎدهﺳﺎزى ﺳﺎﻣﺎﻧﻪﻫﺎ و
-                                            ﺻﺮﻓﻪﺟﻮﯾﻰ ارزى در راﺳﺘﺎى اﺷﺘﻐﺎلآﻓﺮﯾﻨﻰ، ﺗﻮﻟﯿﺪ و
-                                            پﯿﺸﺮﻓﺖﻫﺎى ﻋﻠﻤﻰ ﺷﺪه اﺳﺖ. ﺗﺤﻘﻖ اﯾﻦ اﻣﺮ ﺗﻮﺳﻂ
-                                            ﺷﺮکﺖ ﺧﺪﻣﺎت اﻧﻔﻮرﻣﺎﺗﯿک، ﻧﻤﺎﯾﺎﻧگﺮ ﻧﻘﺶ ﺑﻰﺑﺪﯾﻞ و
-                                            ﺗﺎﺛﯿﺮگﺬار ﺷﺮکﺖ در ﺻﻨﻌﺖ ﺑﺎﻧکﻰ کﺸﻮر اﺳﺖ
+
+                                        <div class="d-flex flex-wrap flex-lg-nowrap gap-5 row-gap-0">
+                                            <div class="col-lg-6 col-12">
+                                                <p class="text text-blue900 mb-0 text-xs">
+                                                    شرکت خدمات انفورماتیک (سهامی عام) به عنوان
+                                                    یکی از زیرمجموعه هاي شرکت ملی انفورماتیک و به
+                                                    منظور اجراي «طرح جامع اتوماسیون بانکی کشور» در
+                                                    آذر ماه سال 1372فعالیت خود را آغاز نمود. با تاسیس
+                                                    این شرکت، نوسازي و مدرنیزه کردن بخش هاي
+                                                    مختلف نظام بانکی کشور وارد مرحله جدیدي شد.
+                                                    مرحله اي که طی آن با بهره گیري از خدمات و امکانات
+                                                    این بازوي فناورانه و با همکارى شرکت ملى انفورماتیک
+                                                    و بانک مرکزى ج.ا.ا؛ ساختار فرسوده و سنتى سیستم
+                                                    بانکی کشور به تدریج تبدیل به سیستمی به روز و
+                                                    کارآمد شده است.
+                                                    شرکت در مسیرى پر تحول و همگام با بلوغ نظام بانکى
+                                                    کشور طى سه دهه از عمر پر دستاورد خود، با پیوند فن
+                                                    آورى هاى اطلاعاتى و ارتباطى با کارکردهاى بانکى، رشد
+                                                    متوازن این فناورى هاى نوین را در جامعه امکان پذیر
+                                                    ساخته است.بار بخش
+                                                    بزرگى از خودکارسازى امور بانکى را بر عهده دارد.
+                                                </p>
+                                            </div>
+                                            <div class="col-lg-6 col-12">
+                                                <p class="text text-blue900 mb-0 text-xs">
+
+                                                    همچنین این شرکت با ارائه ى خدماتیکپارچه به بزرگ ترین بانک هاى کشور،
+                                                    طیف وسیع خدماتى که این شرکت در حوزه ى نظام
+                                                    هاى پرداخت ارائه مى کند، به همراه پایدارى، امنیت و
+                                                    کیفیت بالاى سرویس هاى مزبور باعث شده تا آحاد
+                                                    جامعه بتوانند به صنعت مالى-بانکى تکیه نمایند.
+                                                    خط مشى شرکت در جذب جوانان و نیروهاى مستعد،
+                                                    آموزش و انتقال دانش به درون مجموعه، در اختیار
+                                                    داشتن کد منبع کلیه سامانه هاى حاکمیتى_ملى و نیز
+                                                    محصولات غیرحاکمیتى بدون هیچگونه وابستگى به
+                                                    خارج از کشور، بهره گیرى از دانش بومى و ...؛ همگى
+                                                    منجر به خودکفایى در تولید و پیاده سازى سامانه ها و
+                                                    صرفه جویى ارزى در راستاى اشتغال آفرینى، تولید و
+                                                    پیشرفت هاى علمى شده است. تحقق این امر توسط
+                                                    شرکت خدمات انفورماتیک، نمایانگر نقش بى بدیل و
+                                                    تاثیرگذار شرکت در صنعت بانکى کشور است
+                                                </p>
+                                            </div>
+                                        </div>
                                         </p>
-                                        
+
                                     </div>
                                 </div>
-    
-    
+
+
                             </div>
                             <div class="d-none d-flex step2-box align-items-center " id="STEP2">
-    
-    
+
+
                                 <div class="dec-step-box mx-lg-1 mx-3">
                                     <div class="head-step-box mb-3 d-flex align-items-center">
-    
-                                        <span class="text-primary-emphasis  fw-bold p-1">محصولات و خدمات  </span>
+
+                                        <span class="text-info fw-bold p-1  fs-2">محصولات و خدمات </span>
                                     </div>
                                     <div
                                         class="description-step-box3 d-flex flex-column text-primary-emphasis text-opacity-75">
-    
-                                        <p class="text text-gray900 mb-4 text-xs ">
-                                        ﻓﻌﺎﻟﯿﺖ ﺷﺮکﺖ ﺧﺪﻣﺎت اﻧﻔﻮرﻣﺎﺗﯿک در زﻣﯿﻨﻪ ﺗﺎﻣﯿﻦ و
-                                        ﺗﻮﻟﯿﺪ ﻧﺮماﻓﺰارﻫﺎى ﺑﺎﻧکﻰ ﻣﻮرد ﻧﯿﺎز کﺸﻮر و در ﻗﺎﻟﺐ
-                                        ﺗﻼش ﺑﺎ اﻟکﺘﺮوﻧﯿکﻰ« ﺑﺎﻧکﺪارى ﺟﺎﻣﻊ »ﻃﺮح
-                                        ﺑﺮﻧﺎﻣﻪرﯾﺰىﺷﺪه و ﺣﺮﻓﻪاى گﺮوهﻫﺎى ﺗﺨﺼﺼﻰ ﺷﺎﻣﻞ
-                                        کﺎرﺷﻨﺎﺳﺎن ﺧﺒﺮه و ﺑﺎ ﺗﺠﺮﺑﻪ در ﺣﻮزه ﻫﺎى ﺑﺎﻧکﻰ و
-                                        ﻣﺤﺼﻮﻻت ﻣﻰپﺬﯾﺮد. 
-                                        <br>
-                            
-                                        ﺻﻮرت اﻃﻼﻋﺎت ﻓﻦآورى
-                                        ﻧﺮماﻓﺰارى و ﺳﺎﻣﺎﻧﻪﻫﺎى ﺑﺎﻧکﻰ اﯾﻦ ﺷﺮکﺖ ﻃﯿﻒ کﺎﻣﻠﻰ
-                                        از ﺧﺪﻣﺎت ﻣﻮردﻧﯿﺎز ﺻﻨﻌﺖ ﺑﺎﻧکﺪارى را ﺷﺎﻣﻞ ﻣﻰﺷﻮد.
-                                        ﯾکﻰ از ﺗﻔﺎوت ﻫﺎى اﺻﻠﻰ ﻣﺤﺼﻮﻻت اﯾﻦ ﺷﺮکﺖ ﺑﺎ
-                                        ﻣﺤﺼﻮﻻت ﻣﺸﺎﺑﻬﻰ کﻪ ﺗﻮﺳﻂ ﺳﺎﯾﺮ رﻗﺒﺎ اراﺋﻪ ﻣﻰ
-                                        گﺮدد، ﺗﻮاﻧﻤﻨﺪى پﺮدازش ﻣﯿﻠﯿﻮﻧﻰ ﺗﺮاکﻨﺶ ﻫﺎى روزاﻧﻪ
-                                        ﻣﻰﺑﺎﺷﺪ. اﯾﻦ وﯾژگﻰ، ﻣﺤﺼﻮﻻت ﺷﺮکﺖ را در ﻣﯿﺎن
-                                        ﻣﺤﺼﻮﻻت ﺳﺎﯾﺮ رﻗﺒﺎ ﻣﻨﺤﺼﺮ ﺑﻔﺮد و ﺑﻰرﻗﯿﺐ ﻧﻤﻮده و
-                                        ﻫﻢ اکﻨﻮن در کﻠﯿﻪ ﺷﻌﺐ ﺑﺎﻧک ﻫﺎى ﻃﺮف ﻗﺮارداد کﻪ از
-                                        ﺑﺰرگﺘﺮﯾﻦ و ﻣﻬﻢﺗﺮﯾﻦ ﺑﺎﻧکﻫﺎى کﺸﻮر ﻧﯿﺰ ﻣﺤﺴﻮب
-                                        ﻣﻰﺷﻮﻧﺪ، درﺣﺎل ﺑﻬﺮهﺑﺮدارى ﻣﻰﺑﺎﺷﻨﺪ.
-                                        ﻣﺤﺼﻮﻻت و ﺧﺪﻣﺎت ﺷﺮکﺖ را ﻣﻰﺗﻮان ﺑﻪ دو ﺑﺨﺶ کﻠﻰ
-                                        ﺗﻘﺴﯿﻢ ﻧﻤﻮد:
-                                        <br>
-                                        <br>
-                                        <br>
-                                         1.سامانه های حاکمیتی
-                                        <br>
-                                        2. ﻣﺤﺼﻮﻻت و راﻫکﺎرﻫﺎى ﺑﺎﻧکﺪارى و پﺮداﺧﺖ
+                                        <div class="d-flex flex-wrap flex-lg-nowrap gap-5 row-gap-0">
+                                            <div class="col-lg-6 col-12">
+                                                <p class="text text-blue900 mb-0 text-xs">
+                                                    فعالیت شرکت خدمات انفورماتیک در زمینه تامین و
+                                                    تولید نرم افزارهاى بانکى موردنیاز کشور و در قالب
+                                                    »طرح جامع بانکدارى الکترونیکى« با تلاش برنامه ریزى
+                                                    شده و حرفه اى گروه هاى تخصصى شامل کارشناسان
+                                                    خبره و با تجربه در حوزه هاى بانکى و فن آورى اطلاعات
+                                                    صورت مى پذیرد. محصولات نرم افزارى و سامانه هاى
+                                                    بانکى این شرکت طیف کاملى از خدمات موردنیاز
+                                                    صنعت بانکدارى را شامل مى شود. یکى از تفاوت هاى
+                                                    اصلى محصولات این شرکت با محصولات مشابهى که
+                                                    توسط سایر رقبا ارائه مى گردد، توانمندى پردازش
+                                                    میلیونى تراکنش هاى روزانه مى باشد
+                                                </p>
+                                            </div>
+                                            <div class="col-lg-6 col-12">
+                                                <p class="text text-blue900 mb-0 text-xs">
+                                                این ویژگى،
+                                                محصولات شرکت را در میان محصولات سایر رقبا
+                                                منحصربفرد و بى رقیب نموده و هم اکنون در کلیه شعب
+                                                بانک هاى طرف قرارداد که از بزرگترین و مهم ترین بانک
+                                                هاى کشور نیز محسوب مى شوند، درحال بهره بردارى
+                                                مى باشند.
+                                                <br>
+                                                محصولات و خدمات شرکت را مى توان به دو بخش
+                                                کلى تقسیم نمود:
+                                                <br>
+1.                                                سامانه هاى حاکمیتى
+                                                <br>
+2.                                                محصولات و راهکارهاى بانکدارى و پرداخت
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <p class="text text-blue900 mb-4 text-xs fw-normal ">
+
+                                            <br>
+                                           
                                         </p>
-                                      
-    
+
+
                                     </div>
                                 </div>
                             </div>
                             <div class="d-none d-flex step3-box align-items-center " id="STEP3">
-    
-    
+
+
                                 <div class="dec-step-box mx-lg-1 mx-3 w-100">
-                                   
+
                                     <div
                                         class="group-Informatics-step-box  d-flex flex-column text-primary-emphasis text-opacity-75">
-    
+
                                         <div class="row row-gap-3">
                                             <div class="col-12 col-lg-6">
                                                 <div class="position-relative w-100 min250">
-                                                    <div class="bg-blue900 py-2 d-flex align-items-start position-absolute z-1 top-0 h451898 w-100">
-                                                        <span class="text-white fs-5 fw-bold px-5 me-4">1</span>
-                                                    </div>
-                                                    <div class="bg-gray100 d-flex align-items-center px-2 justify-content-center py-3 h451898 w-100 position-absolute z-2 bottom-0">
-                                                        <p class="text-blue900">اوﻟﯿﻦ در کﻠﯿﻪ ﺷﺎﺧﺺ ﻫﺎى ﺷﻮراى ﻋﺎﻟﻰ اﻧﻔﻮرﻣﺎﺗﯿک</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-12 col-lg-6">
-                                                <div class="position-relative w-100 min250">
-                                                    <div class="bg-blue900 py-2 d-flex align-items-start position-absolute z-1 top-0 h451898 w-100">
-                                                        <span class="text-white fs-5 fw-bold px-5 me-4">%45</span>
-                                                    </div>
-                                                    <div class="bg-gray100 d-flex align-items-center px-2 justify-content-center py-3 h451898 w-100 position-absolute z-2 bottom-0">
-                                                        <p class="text-blue900">کﺎرت ﻫﺎى ﺑﺎﻧکﻰ ﺻﺎدرﺷﺪه در گﺮدش</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-12 col-lg-6">
-                                                <div class="position-relative w-100 min250">
-                                                    <div class="bg-blue900 py-2 d-flex align-items-start position-absolute z-1 top-0 h451898 w-100">
-                                                        <span class="text-white fs-5 fw-bold px-5 me-4">1</span>
-                                                    </div>
-                                                    <div class="bg-gray100 d-flex align-items-center px-2 justify-content-center py-3 h451898 w-100 position-absolute z-2 bottom-0">
-                                                        <p class="text-blue900">اوﻟﯿﻦ و ﺑﺰرگﺗﺮﯾﻦ ﺷﺮکﺖ اراﺋﻪ دﻫﻨﺪه زﯾﺮﺳﺎﺧﺖ ﻫﺎ و
-                                                        ﺧﺎورﻣﯿﺎﻧﻪ در ﺑﺎﻧکﻰ راﻫکﺎرﻫﺎى</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-12 col-lg-6">
-                                                <div class="position-relative w-100 min250">
-                                                    <div class="bg-blue900 py-2 d-flex align-items-start position-absolute z-1 top-0 h451898 w-100">
-                                                        <span class="text-white fs-5 fw-bold px-5 me-4">7200+</span>
+                                                    <div
+                                                        class="bg-blue900 py-2 d-flex align-items-start position-absolute z-1 top-0 h451898 w-100">
+                                                        <span class="text-white fs-5 fw-bold  me-4">1</span>
                                                     </div>
                                                     <div
                                                         class="bg-gray100 d-flex align-items-center px-2 justify-content-center py-3 h451898 w-100 position-absolute z-2 bottom-0">
-                                                        <p class="text-blue900">ﺳﺮوﯾﺲ دﻫﻰ ﺑﻪ ﺷﻌﺐ ﺑﺎﻧکﻰ در ﺳﺮاﺳﺮ کﺸﻮر</p>
+                                                        <p class="text-blue900 px-5">اوﻟﯿﻦ در کلیه ﺷﺎﺧﺺ ﻫﺎى ﺷﻮراى ﻋﺎﻟﻰ
+                                                            انفورماتیک</p>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="col-12 col-lg-6">
                                                 <div class="position-relative w-100 min250">
-                                                    <div class="bg-blue900 py-2 d-flex align-items-start position-absolute z-1 top-0 h451898 w-100">
-                                                        <span class="text-white fs-5 fw-bold px-5 me-4">300+</span>
+                                                    <div
+                                                        class="bg-blue900 py-2 d-flex align-items-start position-absolute z-1 top-0 h451898 w-100">
+                                                        <span class="text-white fs-5 fw-bold  me-4">%45</span>
                                                     </div>
                                                     <div
                                                         class="bg-gray100 d-flex align-items-center px-2 justify-content-center py-3 h451898 w-100 position-absolute z-2 bottom-0">
-                                                        <p class="text-blue900">ﻬﺮهﺑﺮدارى ﺑﺎﻧکﻫﺎ، ﻧﻬﺎدﻫﺎ، ﺷﺮکﺖ ﻫﺎ و اﺳﺘﺎرﺗﺎپ ﻫﺎ در
-                                                        ﻫﺎى پﻮﻟﻰ، ﻣﺎﻟﻰ، ﻓﻨﺎورى اﻃﻼﻋﺎت، ﺣﻤﻞوﻧﻘﻞ، دارو،ﺣﻮزه
-                                                        ﺧﺪﻣﺎﺗﻰ و ... از ﺧﺪﻣﺎت اکﻮﺳﯿﺴﺘﻢ ﺑﺎﻧکﺪارى ﺑﺎز ﺷﺮکﺖ
-                                                        ﺧﺪﻣﺎت اﻧﻔﻮرﻣﺎﺗﯿک</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-12 col-lg-6">
-                                                 <div class="position-relative w-100 min250">
-                                                    <div class="bg-blue900 py-2 d-flex align-items-start position-absolute z-1 top-0 h451898 w-100">
-                                                        <span class="text-white fs-5 fw-bold px-5 me-4">270+ میلیارد</span>
-                                                    </div>
-                                                    <div class="bg-gray100 d-flex align-items-center px-2 justify-content-center py-3 h451898 w-100 position-absolute z-2 bottom-0">
-                                                        <p class="text-blue900">ﺑﺎﻧکﻰ ﻣﺪﯾﺮﯾﺖ ﺷﺪه در ﺳﺎلﺑﯿﻦ و ﺑﺎﻧک تراکنشﻰ </p>
+                                                        <p class="text-blue900 px-5">کارت ﻫﺎى بانکی ﺻﺎدرﺷﺪه در گردش</p>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="col-12 col-lg-6">
                                                 <div class="position-relative w-100 min250">
-                                                    <div class="bg-blue900 py-2 d-flex align-items-start position-absolute z-1 top-0 h451898 w-100">
-                                                        <span class="text-white fs-5 fw-bold px-5 me-4">%100</span>
+                                                    <div
+                                                        class="bg-blue900 py-2 d-flex align-items-start position-absolute z-1 top-0 h451898 w-100">
+                                                        <span class="text-white fs-5 fw-bold  me-4">1</span>
                                                     </div>
                                                     <div
                                                         class="bg-gray100 d-flex align-items-center px-2 justify-content-center py-3 h451898 w-100 position-absolute z-2 bottom-0">
-                                                        <p class="text-blue900">ﺳﺮوﯾﺲدﻫﻰ ﺑﺎ اﻣﻨﯿﺖ 100 درﺻﺪى و 99,9 درﺻﺪ پﺎﯾﺪارى
-                                                        ﺳﺮوﯾﺲﻫ</p>
+                                                        <p class="text-blue900 px-5">اوﻟﯿﻦ و ﺑﺰرگﺗﺮﯾﻦ شرکت اراﺋﻪ دﻫﻨﺪه
+                                                            زﯾﺮﺳﺎﺧﺖ ﻫﺎ و
+                                                            ﺧﺎورﻣﯿﺎﻧﻪ در بانکی راهکارهای</p>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="col-12 col-lg-6">
                                                 <div class="position-relative w-100 min250">
-                                                    <div class="bg-blue900 py-2 d-flex align-items-start position-absolute z-1 top-0 h451898 w-100">
-                                                        <span class="text-white fs-5 fw-bold px-5 me-4">140+</span>
+                                                    <div
+                                                        class="bg-blue900 py-2 d-flex align-items-start position-absolute z-1 top-0 h451898 w-100">
+                                                        <span class="text-white fs-5 fw-bold  me-4">7200+</span>
                                                     </div>
                                                     <div
                                                         class="bg-gray100 d-flex align-items-center px-2 justify-content-center py-3 h451898 w-100 position-absolute z-2 bottom-0">
-                                                        <p class="text-blue900">دﻓﺎﺗﺮاﺳﺘﺎﻧﻰ باپﺸﺘﯿﺒﺎﻧﻰ ﻣﻨﺤﺼﺮ ﺑﻪﻓﺮد</p>
+                                                        <p class="text-blue900 px-5">ﺳﺮوﯾﺲ دﻫﻰ ﺑﻪ ﺷﻌﺐ بانکی در ﺳﺮاﺳﺮ کشور</p>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="col-12 col-lg-6">
                                                 <div class="position-relative w-100 min250">
-                                                    <div class="bg-blue900 py-2 d-flex align-items-start position-absolute z-1 top-0 h451898 w-100">
-                                                        <span class="text-white fs-5 fw-bold px-5 me-4">%44</span>
+                                                    <div
+                                                        class="bg-blue900 py-2 d-flex align-items-start position-absolute z-1 top-0 h451898 w-100">
+                                                        <span class="text-white fs-5 fw-bold  me-4">300+</span>
                                                     </div>
                                                     <div
                                                         class="bg-gray100 d-flex align-items-center px-2 justify-content-center py-3 h451898 w-100 position-absolute z-2 bottom-0">
-                                                        <p class="text-blue900">پﺸﺘﯿﺒﺎﻧﻰ ﺷﻌﺐ ﺑﺎﻧکﻰ در ﺣﻮزه ﺑﺎﻧکﺪارى ﻣﺘﻤﺮکﺰ</p>
+                                                        <p class="text-blue900 px-5">بهره برداری بانکﻫﺎ، ﻧﻬﺎدﻫﺎ، شرکت ﻫﺎ و
+                                                            اﺳﺘﺎرﺗﺎپ ﻫﺎ در
+                                                            ﻫﺎى پولی، ﻣﺎﻟﻰ، ﻓﻨﺎورى اﻃﻼﻋﺎت، ﺣﻤﻞوﻧﻘﻞ، دارو،ﺣﻮزه
+                                                            ﺧﺪﻣﺎﺗﻰ و ... از ﺧﺪﻣﺎت اکوﺳﯿﺴﺘﻢ بانکداری ﺑﺎز شرکت
+                                                            ﺧﺪﻣﺎت انفورماتیک</p>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="col-12 col-lg-6">
                                                 <div class="position-relative w-100 min250">
-                                                    <div class="bg-blue900 py-2 d-flex align-items-start position-absolute z-1 top-0 h451898 w-100">
-                                                        <span class="text-white fs-5 fw-bold px-5 me-4">2</span>
+                                                    <div
+                                                        class="bg-blue900 py-2 d-flex align-items-start position-absolute z-1 top-0 h451898 w-100">
+                                                        <span class="text-white fs-5 fw-bold  me-4">270+
+                                                            میلیارد</span>
                                                     </div>
                                                     <div
                                                         class="bg-gray100 d-flex align-items-center px-2 justify-content-center py-3 h451898 w-100 position-absolute z-2 bottom-0">
-                                                        <p class="text-blue900">ﺑﺮگﺰارى 2دوره روﯾﺪاد ﺷکﻞ دﻫﻰ و ﺷﺘﺎب دﻫﻰ، ﺣﻤﺎﯾﺖ از 9
-                                                        اﺳﺘﺎرﺗﺎپ، 420 ﺳﺎﻋﺖ ﻣﺮﺑﻰگﺮى و آﻣﻮزش ﺗﻮﺳﻂ ﻣﺮکﺰ
-                                                        آﯾﻔﯿﻨک</p>
+                                                        <p class="text-blue900 px-5">بانکی ﻣﺪﯾﺮﯾﺖ ﺷﺪه در ﺳﺎلﺑﯿﻦ و بانک
+                                                            تراکنشی </p>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="col-12 col-lg-6">
                                                 <div class="position-relative w-100 min250">
-                                                    <div class="bg-blue900 py-2 d-flex align-items-start position-absolute z-1 top-0 h451898 w-100">
-                                                        <span class="text-white fs-5 fw-bold px-5 me-4">30 سال</span>
+                                                    <div
+                                                        class="bg-blue900 py-2 d-flex align-items-start position-absolute z-1 top-0 h451898 w-100">
+                                                        <span class="text-white fs-5 fw-bold  me-4">%100</span>
                                                     </div>
                                                     <div
                                                         class="bg-gray100 d-flex align-items-center px-2 justify-content-center py-3 h451898 w-100 position-absolute z-2 bottom-0">
-                                                        <p class="text-blue900">اراﺋﻪ ﺧﺪﻣﺎت در اکﻮﺳﯿﺴﺘﻢ ﺑﺎﻧکﻰ کﺸﻮر</p>
+                                                        <p class="text-blue900 px-5">ﺳﺮوﯾﺲدﻫﻰ ﺑﺎ اﻣﻨﯿﺖ 100 درﺻﺪى و 99,9 درﺻﺪ
+                                                            پایداری
+                                                            ﺳﺮوﯾﺲ ها</p>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="col-12 col-lg-6">
                                                 <div class="position-relative w-100 min250">
-                                                    <div class="bg-blue900 py-2 d-flex align-items-start position-absolute z-1 top-0 h451898 w-100">
-                                                        <span class="text-white fs-5 fw-bold px-5 me-4">+40 میلیون</span>
+                                                    <div
+                                                        class="bg-blue900 py-2 d-flex align-items-start position-absolute z-1 top-0 h451898 w-100">
+                                                        <span class="text-white fs-5 fw-bold  me-4">140+</span>
                                                     </div>
                                                     <div
                                                         class="bg-gray100 d-flex align-items-center px-2 justify-content-center py-3 h451898 w-100 position-absolute z-2 bottom-0">
-                                                        <p class="text-blue900">ﻓﺮاد ﺑﺮﺧﻮردار از ﺧﺪﻣﺎت ﺷﺮکﺖ در روز</p>
+                                                        <p class="text-blue900 px-5">دﻓﺎﺗﺮاﺳﺘﺎﻧﻰ باپشتیبانی ﻣﻨﺤﺼﺮ ﺑﻪﻓﺮد</p>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="col-12 col-lg-6">
                                                 <div class="position-relative w-100 min250">
-                                                    <div class="bg-blue900 py-2 d-flex align-items-start position-absolute z-1 top-0 h451898 w-100">
-                                                        <span class="text-white fs-5 fw-bold px-5 me-4">%100</span>
+                                                    <div
+                                                        class="bg-blue900 py-2 d-flex align-items-start position-absolute z-1 top-0 h451898 w-100">
+                                                        <span class="text-white fs-5 fw-bold  me-4">%44</span>
                                                     </div>
                                                     <div
                                                         class="bg-gray100 d-flex align-items-center px-2 justify-content-center py-3 h451898 w-100 position-absolute z-2 bottom-0">
-                                                        <p class="text-blue900">ﻣﺪﯾﺮﯾﺖ کﻞ گﺮدش پﻮل کﺸﻮر در ﺣﻮزه ﺣﺎکﻤﯿﺘﻰ و
-                                                        ﺣﺪود ﻧﯿﻤﻰ از گﺮدش پﻮل کﺸﻮر در ﺣﻮزه ﻏﯿﺮﺣﺎکﻤﯿﺘﻰ
-                                                        ﺗﻮﺳﻂ ﺷﺮکﺖ ﺧﺪﻣﺎت اﻧﻔﻮرﻣﺎﺗﯿک</p>
+                                                        <p class="text-blue900 px-5">پشتیبانی ﺷﻌﺐ بانکی در ﺣﻮزه بانکداری
+                                                            ﻣﺘﻤﺮکﺰ</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-lg-6">
+                                                <div class="position-relative w-100 min250">
+                                                    <div
+                                                        class="bg-blue900 py-2 d-flex align-items-start position-absolute z-1 top-0 h451898 w-100">
+                                                        <span class="text-white fs-5 fw-bold  me-4">2</span>
+                                                    </div>
+                                                    <div
+                                                        class="bg-gray100 d-flex align-items-center px-2 justify-content-center py-3 h451898 w-100 position-absolute z-2 bottom-0">
+                                                        <p class="text-blue900 px-5">ﺑﺮگﺰارى 2دوره روﯾﺪاد شکل دﻫﻰ و ﺷﺘﺎب دﻫﻰ،
+                                                            ﺣﻤﺎﯾﺖ از 9
+                                                            اﺳﺘﺎرﺗﺎپ، 420 ﺳﺎﻋﺖ ﻣﺮﺑﻰگری و آﻣﻮزش ﺗﻮﺳﻂمرکز
+                                                            آﯾﻔﯿﻨک</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-lg-6">
+                                                <div class="position-relative w-100 min250">
+                                                    <div
+                                                        class="bg-blue900 py-2 d-flex align-items-start position-absolute z-1 top-0 h451898 w-100">
+                                                        <span class="text-white fs-5 fw-bold  me-4">30 سال</span>
+                                                    </div>
+                                                    <div
+                                                        class="bg-gray100 d-flex align-items-center px-2 justify-content-center py-3 h451898 w-100 position-absolute z-2 bottom-0">
+                                                        <p class="text-blue900 px-5">اراﺋﻪ ﺧﺪﻣﺎت در اکوﺳﯿﺴﺘﻢ بانکی کشور</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-lg-6">
+                                                <div class="position-relative w-100 min250">
+                                                    <div
+                                                        class="bg-blue900 py-2 d-flex align-items-start position-absolute z-1 top-0 h451898 w-100">
+                                                        <span class="text-white fs-5 fw-bold  me-4">+40
+                                                            میلیون</span>
+                                                    </div>
+                                                    <div
+                                                        class="bg-gray100 d-flex align-items-center px-2 justify-content-center py-3 h451898 w-100 position-absolute z-2 bottom-0">
+                                                        <p class="text-blue900 px-5">اﻓﺮاد ﺑﺮﺧﻮردار از ﺧﺪﻣﺎت شرکت در روز</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-lg-6">
+                                                <div class="position-relative w-100 min250">
+                                                    <div
+                                                        class="bg-blue900 py-2 d-flex align-items-start position-absolute z-1 top-0 h451898 w-100">
+                                                        <span class="text-white fs-5 fw-bold  me-4">%100</span>
+                                                    </div>
+                                                    <div
+                                                        class="bg-gray100 d-flex align-items-center px-2 justify-content-center py-3 h451898 w-100 position-absolute z-2 bottom-0">
+                                                        <p class="text-blue900 px-5">ﻣﺪﯾﺮﯾﺖ کل گردش پول کشور در ﺣﻮزه حاکمیتی
+                                                            و
+                                                            ﺣﺪود ﻧﯿﻤﻰ از گردش پول کشور در ﺣﻮزه ﻏﯿﺮحاکمیتی
+                                                            ﺗﻮﺳﻂ شرکت ﺧﺪﻣﺎت انفورماتیک</p>
                                                     </div>
                                                 </div>
                                             </div>
 
                                         </div>
-    
-    
+
+
                                     </div>
-                                   
+
                                 </div>
                             </div>
                             <div class="d-none d-flex step4-box align-items-center " id="STEP4">
-    
-    
+
+
                                 <div class="dec-step-box mx-lg-1 mx-3">
                                     <div class="head-step-box mb-3 d-flex align-items-center">
-    
-                                        <span class="text-primary-emphasis  fw-bold p-1"> گروه اینفورماتیک</span>
-                                    </div>
-                                    <div class="group-Informatics-step-box  d-flex flex-column text-primary-emphasis text-opacity-75">
 
-                                        <p class="text text-gray900 mb-4 text-xs ">
-                                            ﻌﻘﯿﺐ روﻧﺪﻫﺎى ﺟﻬﺎﻧﻰ در ﺑﺎﻧکﺪارى اﻟکﺘﺮوﻧﯿک و ﺳﺎزگﺎر ﻧﻤﻮدن ﺳﺎﻣﺎﻧﻪ ﻫﺎى ﺗﻮﻟﯿﺪى ﺑﺎ اﯾﻦ روﻧﺪﻫﺎ، ﺗﻌﺎﻣﻞ ﺳﺎزﻧﺪه ﺑﺎ
-                                            کﻤپﺎﻧﻰ ﻫﺎى ﺧﺎرﺟﻰ و داﺧﻠﻰ ﺟﻬﺖ ﺑﻬﺮهگﯿﺮى و اﻧﺘﻘﺎل داﻧﺶ و ﺗکﻨﻮﻟﻮژى و ﺗﻐﯿﯿﺮ ﺳﺎﺧﺘﺎرﻫﺎى ﺳﻨﺘﻰ ﺑﻪ ﻣﺪرن در زﻣﺮه
-                                            راهﻫﺎى رﺳﯿﺪن ﺑﻪ اﻫﺪاف راﻫﺒﺮدى ﻫﺮ ﺑﻨگﺎه اﻗﺘﺼﺎدى و از آن ﺟﻤﻠﻪ ﺷﺮکﺖ ﺧﺪﻣﺎت اﻧﻔﻮرﻣﺎﺗﯿک ﻣﻰﺑﺎﺷﺪ.
-                                            ، ﺑﺮ اﺳﺎس ﻧﯿﺎزﻫﺎ و کﺴﺐوکﺎرﻫﺎى ﺟﺪﯾﺪ ﻣﻄﺮحﺷﺪه درپﺲ از ﺗﺄﺳﯿﺲ ﺷﺮکﺖ ﺧﺪﻣﺎت اﻧﻔﻮرﻣﺎﺗﯿک در ﺳﺎل 1372
-                                            ﺻﻨﻌﺖ ﺑﺎﻧکﺪارى، ﺗﺄﺳﯿﺲ ﺷﺮکﺖ ﻫﺎي ﺗﺎﺑﻌﻪ در دﺳﺘﻮر کﺎر ﻗﺮار گﺮﻓﺖ.
-                                            در اداﻣﻪ ﺷﺮکﺖ ﻫﺎى زﯾﺮﻣﺠﻤﻮﻋﻪ و ﺑﺮﺧﻰ ﺷﺮکﺖ ﻫﺎى ﻫﻤکﺎر، ﻃﻰ ﺳﺎﻟﯿﺎن گﺬﺷﺘﻪ ﻣﻌﺮﻓﻰ ﺷﺪهاﻧﺪ.
+                                        <span class="text-info fw-bold p-1  fs-2"> گروه انفورماتیک</span>
+                                    </div>
+                                    <div
+                                        class="group-Informatics-step-box  d-flex flex-column text-primary-emphasis text-opacity-75">
+
+                                        <p class="text text-blue900 mb-4 text-xs fw-normal ">
+                                            تعقیب روندهاى جهانى در بانکدارى الکترونیک و سازگار نمودن سامانه هاى تولیدى با این روندها، تعامل سازنده با
+                                            کمپانى هاى خارجى و داخلى جهت بهره گیرى و انتقال دانش و تکنولوژى و تغییر ساختارهاى سنتى به مدرن در زمره
+                                            راه هاى رسیدن به اهداف راهبردى هر بنگاه اقتصادى و از آن جمله شرکت خدمات انفورماتیک مى باشد.
+                                            <br>
+                                            پس از تأسیس شرکت خدمات انفورماتیک در سال ،1372بر اساس نیازها و کسب وکارهاى جدید مطرح شده در
+                                            صنعت بانکدارى، تأسیس شرکت هاي تابعه در دستور کار قرار گرفت.
+                                            <br>
+                                            در ادامه شرکت هاى زیرمجموعه و برخى شرکت هاى همکار طى سالیان گذشته معرفى شده اند
                                         </p>
 
 
@@ -430,34 +486,37 @@
                                         <div class="d-flex flex-column mb-5">
                                             <div class="d-flex align-items-start mb-3">
                                                 <span class="title text-blue fs-6 fw-bold">شرکت های زیر مجموعه:</span>
-                                    
+
                                             </div>
-                                            <div class="d-flex flex-wrap align-items-center justify-content-lg-between justify-content-center">
-                                             
+                                            <div
+                                                class="d-flex flex-wrap align-items-center justify-content-lg-between justify-content-center">
+
                                                 <div class="">
-                                                    <img src="../img/about-us/logo3/001-05.png" alt="" width="140">
+                                                    <img src="../img/about-us/logo3/001-05.png" alt="" width="130">
                                                 </div>
                                                 <div class="">
-                                                    <img src="../img/about-us/logo3/001-04.png" alt="" width="140">
+                                                    <img src="../img/about-us/logo3/001-04.png" alt="" width="130">
                                                 </div>
                                                 <div class="">
-                                                    <img src="../img/about-us/logo3/001-03.png" alt="" width="140">
+                                                    <img src="../img/about-us/logo3/001-03.png" alt="" width="130">
                                                 </div>
                                                 <div class="">
-                                                    <img src="../img/about-us/logo3/001-02.png" alt="" width="140">
+                                                    <img src="../img/about-us/logo3/001-02.png" alt="" width="130">
                                                 </div>
                                                 <div class="">
-                                                    <img src="../img/about-us/logo3/001-01.png" alt="" width="140">
+                                                    <img src="../img/about-us/logo3/001-01.png" alt="" width="130">
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="d-flex flex-column mb-5">
                                             <div class="d-flex align-items-start mb-3">
-                                                <span class="title text-blue fw-bolder fs-6">همکاران ﻓﻨﺎوری مالی: </span>
-                                    
+                                                <span class="title text-blue fw-bolder fs-6">همکاران ﻓﻨﺎوری مالی:
+                                                </span>
+
                                             </div>
-                                            <div class="d-flex flex-wrap align-items-center justify-content-lg-between justify-content-center">
-                                               
+                                            <div
+                                                class="d-flex flex-wrap align-items-center justify-content-lg-between justify-content-center">
+
                                                 <div class="">
                                                     <img src="../img/about-us/logo3/001-11.png" alt="" width="130">
                                                 </div>
@@ -481,10 +540,11 @@
                                         <div class="d-flex flex-column mb-5">
                                             <div class="d-flex align-items-start mb-3">
                                                 <span class="title text-blue fw-bolder fs-6"> شرکای ﺗﺠﺎری:</span>
-                                    
+
                                             </div>
-                                            <div class="d-flex flex-wrap align-items-center justify-content-lg-between justify-content-center">
-                                              
+                                            <div
+                                                class="d-flex flex-wrap align-items-center justify-content-lg-between justify-content-center">
+
                                                 <div class="">
                                                     <img src="../img/about-us/logo3/001-16.png" alt="" width="140">
                                                 </div>
@@ -506,107 +566,121 @@
                                 </div>
                             </div>
                             <div class="d-none d-flex step5-box align-items-center" id="STEP5">
-    
-    
+
+
                                 <div class="dec-step-box mx-lg-1 mx-3">
                                     <div class="head-step-box mb-3 d-flex align-items-center">
-    
-                                        <span class="text-primary-emphasis  fw-bold p-1"> آی فینیک</span>
+
+                                        <span class="text-info fw-bold p-1  fs-2"> آی فینیک</span>
                                     </div>
                                     <div
                                         class="description-step-box3 d-flex flex-column text-primary-emphasis text-opacity-75">
-    
+
                                         <p class="text  text-gray900 mb-4  text-xs">
                                             آی فینیک ، مکز نوآوری مالی شرکت خدمات
-                                            اﻧﻔﻮرﻣﺎﺗﯿک، ﺑﺎ ﻫﺪف ﺣﻤﺎﯾﺖ از اﺳﺘﺎرﺗﺎپﻫﺎى ﻓﯿﻨﺘک و
-                                            اﯾﺠﺎد ﺗﺤﻮل در ﺻﻨﻌﺖ ﺑﺎﻧکﻰ و ﺣﻮزهﻫﺎى ﻣﺎﻟﻰ ﺷکﻞ
-                                            گﺮﻓﺘﻪ اﺳﺖ. ﯾکﻰ از ﻓﻌﺎﻟﯿﺖﻫﺎى اﺻﻠﻰ آىﻓﯿﻨک،
-                                            اﺟﺮاى ﺑﺮﻧﺎﻣﻪﻫﺎى ﺷﻨﺎﺳﺎﯾﻰ، ﺷکﻞدﻫﻰ و ﺷﺘﺎبدﻫﻰ
+                                            انفورماتیک، ﺑﺎ ﻫﺪف ﺣﻤﺎﯾﺖ از اﺳﺘﺎرﺗﺎپﻫﺎىفینتک و
+                                            اﯾﺠﺎد ﺗﺤﻮل در ﺻﻨﻌﺖ بانکی و ﺣﻮزهﻫﺎى ﻣﺎﻟﻰ شکل
+                                            گﺮﻓﺘﻪ اﺳﺖ. ﯾکﻰ از ﻓﻌﺎﻟﯿﺖﻫﺎى اﺻﻠﻰ آی فینک،
+                                            اﺟﺮاى ﺑﺮﻧﺎﻣﻪﻫﺎى ﺷﻨﺎﺳﺎﯾﻰ، شکلدﻫﻰ و ﺷﺘﺎبدﻫﻰ
                                             اﺳﺘﺎرﺗﺎپﻫﺎﯾﻰ اﺳﺖ کﻪ راهﺣﻞﻫﺎى ﻧﻮآوراﻧﻪ و ﻓﻨﺎوراﻧﻪ
-                                            را ﺑﺮاى ﺣﻞ ﻣﺴﺎﺋﻞ ﻓﯿﻨﺘک ﺟﺎﻣﻌﻪ و ﻫﻤﺴﻮ ﺑﺎ روﻧﺪﻫﺎى
+                                            را ﺑﺮاى ﺣﻞ ﻣﺴﺎﺋﻞفینتک ﺟﺎﻣﻌﻪ و ﻫﻤﺴﻮ ﺑﺎ روﻧﺪﻫﺎى
                                             ﻓﻨﺎورى اراﺋﻪ ﻣﻰکﻨﻨﺪ.
                                             <br>
-                                            •دﺳﺘﺮﺳﻰ ﺑﻪ زﯾﺮﺳﺎﺧﺖﻫﺎى ﻻزم ﺟﻬﺖ اراﺋﻪ 
-                                            
-                                            ﺧﺪﻣﺎت ﺑﺎﻧکﻰ و پﺮداﺧﺖ
-                                           
-                                            از ﺟﻤﻠﻪ ﺳکﻮى ﺑﺎﻧکﺪارى ﺑﺎز ﺷﺎﻫﯿﻦ
+                                            • دﺳﺘﺮﺳﻰ ﺑﻪ زﯾﺮﺳﺎﺧﺖﻫﺎى ﻻزم ﺟﻬﺖ اراﺋﻪ
+
+                                            ﺧﺪﻣﺎت بانکی و پرداخت
+
+                                            از ﺟﻤﻠﻪ ﺳکﻮى بانکداری ﺑﺎز ﺷﺎﻫﯿﻦ
                                             <br>
-                                            آﻣﻮزش و ﺧﺪﻣﺎت ﻣﺸﺎوره•
-                                            
-                                            در ﺣﻮزه رگﻮﻻﺗﻮرى و ﻗﻮاﻧﯿﻦ و ﻣﻘﺮرات ﻧﻈﺎم ﺑﺎﻧکﻰ
+                                            • آﻣﻮزش و ﺧﺪﻣﺎت ﻣﺸﺎوره
+                                            در ﺣﻮزه رگولاتوری و ﻗﻮاﻧﯿﻦ و ﻣﻘﺮرات ﻧﻈﺎم بانکی
                                             <br>
-                                            ﺧﺪﻣﺎت ﻣﺸﺎوره ﺟﻬﺖ اﺧﺬ ﻣﺠﻮزﻫﺎى ﻻزم و•
-                                           
-                                            ﺗﺴﻬﯿﻞ ورود ﺑﻪ ﺑﺎزار ﺑﺎ اﺷﺮاف ﺑﺮ ﺿﻮاﺑﻂ رگﻮﻻﺗﻮرى
+                                            • ﺧﺪﻣﺎت ﻣﺸﺎوره ﺟﻬﺖ اﺧﺬ ﻣﺠﻮزﻫﺎى ﻻزم و
+
+                                            ﺗﺴﻬﯿﻞ ورود ﺑﻪ ﺑﺎزار ﺑﺎ اﺷﺮاف ﺑﺮ ﺿﻮاﺑﻂ رگولاتوری
                                             <br>
-                                            اﻣکﺎن ﺗﻌﺎﻣﻞ و ﺷﺒکﻪﺳﺎزى ﺑﺎ ﻓﻌﺎﻻن ﻧﻈﺎم ﺑﺎﻧکﻰ•
-                                           
+                                            • امکان ﺗﻌﺎﻣﻞ و ﺷﺒکﻪﺳﺎزى ﺑﺎ ﻓﻌﺎﻻن ﻧﻈﺎم بانکی
+
                                             ﺗﺰرﯾﻖ ﺳﺮﻣﺎﯾﻪ در ﻣﺮاﺣﻞ ﻣﺨﺘﻠﻒ رﺷﺪ اﺳﺘﺎرﺗﺎپ ﻫ
-    <br>
-    
+                                            <br>
+
                                         </p>
-                                       
-    
-    
+
+
+
                                     </div>
                                     <div class="my-5">
                                         <div class="row">
                                             <div class="col-12 col-lg-6">
                                                 <div class="d-flex flex-column">
                                                     <div class="mb-4">
-                                                        <span class="text-blue fw-bolder fs-6">ﺣﻮزه ﻫﺎی ﻓﻌﺎﻟﯿﺖ آیﻓﯿﻨک</span>
+                                                        <span class="text-blue fw-bolder fs-6">ﺣﻮزه ﻫﺎی ﻓﻌﺎﻟﯿﺖ
+                                                           آی فینک</span>
                                                     </div>
-                                                    <div class="d-flex flex-column align-items-center justify-content-center">
-                                                        <div class="bg-blue900 text-white w-100 mb-2 text-center fs-7 py-2">
+                                                    <div
+                                                        class="d-flex flex-column align-items-center justify-content-center">
+                                                        <div
+                                                            class="bg-blue900 text-white w-100 mb-2 text-center fs-7 py-2">
                                                             <span class="">RegTech</span>
                                                         </div>
-                                                        <div class="bg-blue900 text-white w-100 mb-2 text-center fs-7 py-2">
+                                                        <div
+                                                            class="bg-blue900 text-white w-100 mb-2 text-center fs-7 py-2">
                                                             <span class="">PayTech</span>
                                                         </div>
-                                                        <div class="bg-blue900 text-white w-100 mb-2 text-center fs-7 py-2">
+                                                        <div
+                                                            class="bg-blue900 text-white w-100 mb-2 text-center fs-7 py-2">
                                                             <span class="">BankTech</span>
                                                         </div>
-                                                        <div class="bg-blue900 text-white w-100 mb-2 text-center fs-7 py-2">
+                                                        <div
+                                                            class="bg-blue900 text-white w-100 mb-2 text-center fs-7 py-2">
                                                             <span class="">WealthTech</span>
                                                         </div>
-                                                        <div class="bg-blue900 text-white w-100 mb-2 text-center fs-7 py-2">
+                                                        <div
+                                                            class="bg-blue900 text-white w-100 mb-2 text-center fs-7 py-2">
                                                             <span class="">LendTech</span>
                                                         </div>
-                                                        <div class="bg-blue900 text-white w-100 mb-2 text-center fs-7 py-2">
+                                                        <div
+                                                            class="bg-blue900 text-white w-100 mb-2 text-center fs-7 py-2">
                                                             <span class="">PFM</span>
                                                         </div>
-                                                        <div class="bg-blue900 text-white w-100 mb-2 text-center fs-7 py-2">
+                                                        <div
+                                                            class="bg-blue900 text-white w-100 mb-2 text-center fs-7 py-2">
                                                             <span class="">Remittance</span>
                                                         </div>
 
                                                     </div>
-                                                    
+
                                                 </div>
                                             </div>
                                             <div class="col-12 col-lg-6">
                                                 <div class="d-flex flex-column">
                                                     <div class="mb-4">
-                                                        <span class="text-blue fw-bolder fs-6">کﺎرﺑﺮد ﻓﻨﺎوریﻫﺎی ﻧﻮﯾﻦ در ﻓﯿﻨﺘک</span>
+                                                        <span class="text-blue fw-bolder fs-6">کارﺑﺮد ﻓﻨﺎوریﻫﺎی ﻧﻮﯾﻦ در
+                                                           فینتک</span>
                                                     </div>
                                                     <div class="">
-                                                        <div class="bg-blue900 text-white w-100 mb-2 text-center fs-7 py-2">
+                                                        <div
+                                                            class="bg-blue900 text-white w-100 mb-2 text-center fs-7 py-2">
                                                             <span class="">BigData</span>
                                                         </div>
-                                                        <div class="bg-blue900 text-white w-100 mb-2 text-center fs-7 py-2">
+                                                        <div
+                                                            class="bg-blue900 text-white w-100 mb-2 text-center fs-7 py-2">
                                                             <span class="">IOT</span>
                                                         </div>
-                                                        <div class="bg-blue900 text-white w-100 mb-2 text-center fs-7 py-2">
+                                                        <div
+                                                            class="bg-blue900 text-white w-100 mb-2 text-center fs-7 py-2">
                                                             <span class="">Cloud Computing</span>
                                                         </div>
-                                                        <div class="bg-blue900 text-white w-100 mb-2 text-center fs-7 py-2">
+                                                        <div
+                                                            class="bg-blue900 text-white w-100 mb-2 text-center fs-7 py-2">
                                                             <span class="">AI</span>
                                                         </div>
-                                                        <div class="bg-blue900 text-white w-100 mb-2 text-center fs-7 py-2">
+                                                        <div
+                                                            class="bg-blue900 text-white w-100 mb-2 text-center fs-7 py-2">
                                                             <span class="">Blockchain</span>
                                                         </div>
                                                     </div>
-                                                    
+
                                                 </div>
                                             </div>
                                         </div>
@@ -616,10 +690,12 @@
                                             <div class="col-12 col-lg-6">
                                                 <div class="d-flex flex-column">
                                                     <div class="mb-2">
-                                                        <span class="text-blue fs-6 fw-bold">ﻣﺰﯾﺖ ﻫﺎی آیﻓﯿﻨک ﺑﺮای اﺳﺘﺎرﺗﺎپ ﻫﺎ</span>
+                                                        <span class="text-blue fs-6 fw-bold">ﻣﺰﯾﺖ ﻫﺎیآی فینک ﺑﺮای
+                                                            اﺳﺘﺎرﺗﺎپ ﻫﺎ</span>
                                                     </div>
                                                     <div class="">
-                                                        <p class="text-blue900 text-xs">ﻣﻨﺘﻮرﯾﻨگ ﺣﺮﻓﻪاى و ﺗﺨﺼﺼﻰ ﺣﻮزه ﺑﺎﻧکﻰ •
+                                                        <p class="text-blue900 text-xs">ﻣﻨﺘﻮرﯾﻨگ ﺣﺮﻓﻪاى و ﺗﺨﺼﺼﻰ ﺣﻮزه
+                                                            بانکی •
                                                             ﻣﺘﻨﺎﺳﺐ ﺑﺎ ﻧﯿﺎزﻫﺎ و چﺎﻟﺶﻫﺎى ﺻﻨﻌﺖ ﻓﯿﻦﺗک و
                                                             اﻟگﻮﻫﺎى ﻣﻮﻓﻖ</p>
                                                     </div>
@@ -627,7 +703,8 @@
                                             </div>
                                             <div class="col-12 col-lg-6">
                                                 <div class="d-flex align-items-center justify-content-center">
-                                                    <img src="../img/about-us/درباره ما- آی فینیک.png" alt="" width="150">
+                                                    <img src="../img/about-us/درباره ما- آی فینیک.png" alt=""
+                                                        width="150">
                                                 </div>
                                             </div>
                                         </div>
@@ -635,80 +712,96 @@
                                 </div>
                             </div>
                             <div class="d-none d-flex step6-box flex-column align-items-center" id="STEP6">
-    
-    
+
+
                                 <div class="dec-step-box mx-lg-1 mx-3 w-100">
                                     <div class="head-step-box mb-3 d-flex align-items-center">
-    
+
                                         <span class="text-blue  fw-bold p-1"> مشتریان</span>
                                     </div>
                                     <div
                                         class="description-step-box2 d-flex flex-column text-primary-emphasis text-opacity-75 ">
-    
-                                 
-                                    راﻫکﺎرﻫﺎى کﻠﯿﻪ ﺑﺎﻧکﻫﺎ و ﻣﻮﺳﺴﺎت ﻣﺎﻟﻰ - اﻋﺘﺒﺎرى کﺸﻮر، ﻣﺸﺘﺮى ﺳﺎﻣﺎﻧﻪﻫﺎى ﺣﺎکﻤﯿﺘﻰ، ﻣﺤﺼﻮﻻت و
-                                    ﺑﺎﻧکﺪارى و پﺮداﺧﺖ ﺷﺮکﺖ ﺧﺪﻣﺎت اﻧﻔﻮرﻣﺎﺗﯿک ﻣﻰﺑﺎﺷﻨﺪ.
-    
+
+
+                                        راهکارهای کلیه بانکﻫﺎ و ﻣﻮﺳﺴﺎت ﻣﺎﻟﻰ - اﻋﺘﺒﺎرى کشور، ﻣﺸﺘﺮى ﺳﺎﻣﺎﻧﻪﻫﺎى حاکمیتی،
+                                        ﻣﺤﺼﻮﻻت و
+                                        بانکداری و پرداخت شرکت ﺧﺪﻣﺎت انفورماتیک ﻣﻰﺑﺎﺷﻨﺪ.
+
                                     </div>
                                     <div class="mt-5 d-flex flex-column">
                                         <div class="d-flex flex-column mb-5 pb-3">
                                             <div class="d-flex align-items-center justify-content-center mb-5 ">
-                                                <span class="text-blue fw-bold fs-6">ﻣﺸترﯾﺎن راﻫکﺎر ﺟﺎﻣﻊ ﺑﺎﻧکﺪاری ﻣﺘﻤﺮکﺰ</span>
-                                    
+                                                <span class="text-blue fw-bold fs-6">ﻣﺸترﯾﺎن راﻫکار ﺟﺎﻣﻊ بانکﺪاری
+                                                    ﻣﺘﻤﺮکﺰ</span>
+
                                             </div>
-                                            <div class="d-flex align-items-center justify-content-lg-between justify-content-center row-gap-3 mb-3 flex-wrap">
+                                            <div
+                                                class="d-flex align-items-center justify-content-lg-between justify-content-center row-gap-3 mb-3 flex-wrap">
                                                 <div class="">
-                                                    <img src="../img/about-us/bank-logo1/logoes-01.png" width="70" alt="logo-bank-meli">
+                                                    <img src="../img/about-us/bank-logo1/logoes-01.png" width="110"
+                                                        alt="logo-bank-markazi">
                                                 </div>
                                                 <div class="">
-                                                    <img src="../img/about-us/bank-logo1/logoes-02.png" width="70" alt="">
+                                                    <img src="../img/about-us/bank-logo1/logoes-02.png" width="100"
+                                                        alt="bank meli">
                                                 </div>
                                                 <div class="">
-                                                    <img src="../img/about-us/bank-logo1/logoes-03.png" width="70" alt="">
+                                                    <img src="../img/about-us/bank-logo1/logoes-03.png" width="80"
+                                                        alt="bank saderat">
                                                 </div>
                                                 <div class="">
-                                                    <img src="../img/about-us/bank-logo1/logoes-04.png" width="70" alt="">
+                                                    <img src="../img/about-us/bank-logo1/logoes-04.png" width="80"
+                                                        alt="bank tejarat">
                                                 </div>
                                                 <div class="">
-                                                    <img src="../img/about-us/bank-logo1/logoes-05.png" width="70" alt="">
+                                                    <img src="../img/about-us/bank-logo1/logoes-05.png" width="80"
+                                                        alt="bank ayandeh">
                                                 </div>
                                                 <div class="">
-                                                    <img src="../img/about-us/bank-logo1/logoes-06.png" width="70" alt="">
+                                                    <img src="../img/about-us/bank-logo1/logoes-06.png" width="90"
+                                                        alt="bank tose-e">
                                                 </div>
-                                    
+                                                <div class="">
+                                                    <img src="../img/about-us/bank-logo1/logoes-07.png" width="85"
+                                                        alt="bank noor">
+                                                </div>
+
                                             </div>
                                         </div>
                                         <div class="row">
                                             <div class="col-12 col-lg-6">
                                                 <div class="d-flex flex-column">
-                                                    <div class="d-flex align-items-center justify-content-center mb-5">
+                                                    <div class="d-flex align-items-center justify-content-start mb-5">
                                                         <span class="text-blue fw-bold fs-6">
-                                                            ﻣﺸترﯾﺎن در ﺣﻮزه ﺳﯿﺴﺘﻢ ﻣﺪﯾﺮﯾﺖ کﺎرت
+                                                            ﻣﺸترﯾﺎن در ﺣﻮزه ﺳﯿﺴﺘﻢ ﻣﺪﯾﺮﯾﺖ کارت
                                                         </span>
                                                     </div>
-                                                    <div class="d-flex align-items-center justify-content-center">
+                                                    <div class="d-flex align-items-center justify-content-start">
                                                         <div class="">
-                                                            <img src="../img/about-us/bank-logo1/logoes-07.png" width="70" alt="">
+                                                            <img src="../img/about-us/bank-logo1/logoes-08.png"
+                                                                width="85" alt="">
 
                                                         </div>
                                                         <div class="">
-                                                            <img src="../img/about-us/bank-logo1/logoes-08.png" width="70" alt="">
+                                                            <img src="../img/about-us/bank-logo1/logoes-09.png"
+                                                                width="70" alt="">
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="col-12 col-lg-6">
                                                 <div class="d-flex flex-column">
-                                                    <div class="d-flex align-items-center justify-content-center mb-5">
+                                                    <div class="d-flex align-items-center justify-content-start mb-5">
                                                         <span class="text-blue fw-bold fs-6">
-                                                            ﻣﺸترﯾﺎن در ﺣﻮزه ﺧﺪﻣﺎت پﺮداﺧﺖ PSP
+                                                            ﻣﺸترﯾﺎن در ﺣﻮزه ﺧﺪﻣﺎت پرداخت PSP
                                                         </span>
-                                                        
+
                                                     </div>
-                                                    <div class="d-flex align-items-center justify-content-center">
+                                                    <div class="d-flex align-items-center justify-content-start">
                                                         <div class="">
-                                                            <img src="../img/about-us/bank-logo1/logoes-09.png" width="80" alt="">
-                                                    
+                                                            <img src="../img/about-us/bank-logo1/logoes-10.png"
+                                                                width="80" alt="">
+
                                                         </div>
                                                         <div class="">
                                                             <img src="" width="100" alt="">
@@ -720,107 +813,139 @@
                                         <div class="border-bottom border border-primary my-5 flex-grow-1"></div>
                                         <div class="">
                                             <div class="d-flex align-items-center justify-content-center my-4">
-                                                <img src="../img/about-us/bank-logo1/logoes-01.png" width="200" alt="">
+                                                <img src="../img/about-us/bank-logo1/logoes-01.png" width="230" alt="">
                                             </div>
 
                                         </div>
                                         <div class="d-flex align-items-center justify-content-between mb-3 flex-wrap">
                                             <div class="">
-                                                <img src="../img/about-us/bank-logo2/logoes-12.png" width="135" alt="logo-bank-meli">
+                                                <img src="../img/about-us/bank-logo1/logoes-02.png" width="100" alt="">
                                             </div>
                                             <div class="">
-                                                <img src="../img/about-us/bank-logo2/logoes-13.png" width="135" alt="">
+                                                <img src="../img/about-us/bank-logo1/logoes-03.png" width="100" alt="">
                                             </div>
                                             <div class="">
-                                                <img src="../img/about-us/bank-logo2/logoes-14.png" width="135" alt="">
+                                                <img src="../img/about-us/bank-logo1/logoes-04.png" width="100" alt="">
                                             </div>
                                             <div class="">
-                                                <img src="../img/about-us/bank-logo2/logoes-15.png" width="135" alt="">
+                                                <img src="../img/about-us/bank-logo1/logoes-05.png" width="100" alt="">
                                             </div>
                                             <div class="">
-                                                <img src="../img/about-us/bank-logo2/logoes-16.png" width="135" alt="">
+                                                <img src="../img/about-us/bank-logo1/logoes-06.png" width="100" alt="">
                                             </div>
                                             <div class="">
-                                                <img src="../img/about-us/bank-logo2/logoes-17.png" width="135" alt="">
+                                                <img src="../img/about-us/bank-logo1/logoes-07.png" width="100" alt="">
                                             </div>
                                             <div class="">
-                                                <img src="../img/about-us/bank-logo2/logoes-18.png" width="135" alt="">
+                                                <img src="../img/about-us/bank-logo1/logoes-08.png" width="100" alt="">
                                             </div>
                                             <div class="">
-                                                <img src="../img/about-us/bank-logo2/logoes-19.png" width="135" alt="">
+                                                <img src="../img/about-us/bank-logo1/logoes-09.png" width="100" alt="">
                                             </div>
                                             <div class="">
-                                                <img src="../img/about-us/bank-logo2/logoes-20.png" width="135" alt="">
+                                                <img src="../img/about-us/bank-logo1/logoes-10.png" width="100"
+                                                    alt="logo-bank-meli">
                                             </div>
                                             <div class="">
-                                                <img src="../img/about-us/bank-logo2/logoes-21.png" width="135" alt="">
+                                                <img src="../img/about-us/bank-logo2/logoes-12.png" width="100"
+                                                    alt="logo-bank-meli">
                                             </div>
                                             <div class="">
-                                                <img src="../img/about-us/bank-logo2/logoes-22.png" width="135" alt="">
+                                                <img src="../img/about-us/bank-logo2/logoes-13.png" width="100" alt="">
                                             </div>
                                             <div class="">
-                                                <img src="../img/about-us/bank-logo2/logoes-23.png" width="135" alt="">
+                                                <img src="../img/about-us/bank-logo2/logoes-14.png" width="100" alt="">
                                             </div>
-                                             <div class="">
-                                                <img src="../img/about-us/bank-logo2/logoes-24.png" width="135" alt="">
+                                            <div class="">
+                                                <img src="../img/about-us/bank-logo2/logoes-15.png" width="100" alt="">
+                                            </div>
+                                            <div class="">
+                                                <img src="../img/about-us/bank-logo2/logoes-16.png" width="100" alt="">
+                                            </div>
+                                            <div class="">
+                                                <img src="../img/about-us/bank-logo2/logoes-17.png" width="100" alt="">
+                                            </div>
+                                            <div class="">
+                                                <img src="../img/about-us/bank-logo2/logoes-18.png" width="100" alt="">
+                                            </div>
+                                            <div class="">
+                                                <img src="../img/about-us/bank-logo2/logoes-19.png" width="100" alt="">
+                                            </div>
+                                            <div class="">
+                                                <img src="../img/about-us/bank-logo2/logoes-20.png" width="100" alt="">
+                                            </div>
+                                            <div class="">
+                                                <img src="../img/about-us/bank-logo2/logoes-21.png" width="100" alt="">
+                                            </div>
+                                            <div class="">
+                                                <img src="../img/about-us/bank-logo2/logoes-22.png" width="100" alt="">
+                                            </div>
+                                            <div class="">
+                                                <img src="../img/about-us/bank-logo2/logoes-23.png" width="100" alt="">
+                                            </div>
+                                            <div class="">
+                                                <img src="../img/about-us/bank-logo2/logoes-24.png" width="100" alt="">
                                             </div>
 
                                             <div class="">
-                                                <img src="../img/about-us/bank-logo2/logoes-25.png" width="135" alt="">
+                                                <img src="../img/about-us/bank-logo2/logoes-25.png" width="100" alt="">
                                             </div>
-                                             <div class="">
-                                                <img src="../img/about-us/bank-logo2/logoes-26.png" width="135" alt="">
+                                            <div class="">
+                                                <img src="../img/about-us/bank-logo2/logoes-26.png" width="100" alt="">
                                             </div>
 
                                             <div class="">
-                                                <img src="../img/about-us/bank-logo2/logoes-27.png" width="135" alt="">
+                                                <img src="../img/about-us/bank-logo2/logoes-27.png" width="100" alt="">
                                             </div>
 
                                             <div class="">
-                                                <img src="../img/about-us/bank-logo2/logoes-28.png" width="135" alt="">
+                                                <img src="../img/about-us/bank-logo2/logoes-28.png" width="100" alt="">
                                             </div>
                                             <div class="">
-                                                <img src="../img/about-us/bank-logo2/logoes-29.png" width="135" alt="">
+                                                <img src="../img/about-us/bank-logo2/logoes-29.png" width="100" alt="">
                                             </div>
                                             <div class="">
-                                                <img src="../img/about-us/bank-logo2/logoes-30.png" width="135" alt="">
+                                                <img src="../img/about-us/bank-logo2/logoes-30.png" width="100" alt="">
                                             </div>
                                             <div class="">
-                                                <img src="../img/about-us/bank-logo2/logoes-31.png" width="135" alt="">
+                                                <img src="../img/about-us/bank-logo2/logoes-31.png" width="100" alt="">
                                             </div>
                                             <div class="">
-                                                <img src="../img/about-us/bank-logo2/logoes-32.png" width="135" alt="">
+                                                <img src="../img/about-us/bank-logo2/logoes-32.png" width="100" alt="">
                                             </div>
                                             <div class="">
-                                                <img src="../img/about-us/bank-logo2/logoes-33.png" width="135" alt="">
+                                                <img src="../img/about-us/bank-logo2/logoes-33.png" width="100" alt="">
                                             </div>
                                             <div class="">
-                                                <img src="../img/about-us/bank-logo2/logoes-34.png" width="135" alt="">
+                                                <img src="../img/about-us/bank-logo2/logoes-34.png" width="100" alt="">
                                             </div>
-                                           
-                                           
+
+
 
                                         </div>
                                     </div>
                                 </div>
-                                
+
                             </div>
-    
+
                         </div>
                     </div>
                 </div>
             </div>
-    
+
             <!-- End tabs -->
 
-    
-    
-    
+
+
+
         </div>
     </section>
     <!-- End Tabs -->
-    <div class="w-100 py-2 bg-blue900 mb-4 mt-5">
-    
+    <div class="footer-bar position-relative w-100 overflow-hidden mt-5 ">
+        <img src="./img/footer bar-01.png" alt="footerbar" class=" object-fit-cover ">
+    </div>
+    <div class="w-100 py-2 bg-blue900 mb-4 ">
+
     </div>
 
 
@@ -840,4 +965,5 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="../js/script.js"></script>
 </body>
+
 </html>
