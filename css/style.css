@@ -98,7 +98,16 @@
 .min250{
     min-height: 250px;
 }
-
+#support .circle-text::after{
+    position: absolute;
+    content: " ";
+    right: -20px;
+    top: 10px;
+    background-color: var(--gray100);
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+}
 /* end informatics */
 @media (max-width: 768px) {
     #intro {
