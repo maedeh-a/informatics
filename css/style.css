@@ -108,6 +108,9 @@
     width: 10px;
     border-radius: 50%;
 }
+.img-support{
+    width: 600px;
+}
 /* end informatics */
 @media (max-width: 768px) {
     #intro {
