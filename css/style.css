@@ -120,6 +120,9 @@
         column-count: 1;
         max-height: max-content;
     }
+        .img-support {
+            width: 320px;
+        }
     
     .links-box .link-box {
         width: 140px;
