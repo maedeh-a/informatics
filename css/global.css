@@ -75,3 +75,6 @@ body *, * *{
     height: 40px;
     inset: 0;
 }
+.ff-calibri{
+    font-family: calibri !important;
+}
