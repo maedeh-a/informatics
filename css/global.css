@@ -1,6 +1,6 @@
 /* @import url("https://farsifont.github.io/css/iranyekan.css"); */
 /* @import url("https://farsifont.github.io/css/iranyekan-farsi-numbers.css"); */
-@import url(../css/style.css);
+@import url(./style.css);
 
 /* Font */
 @font-face {
