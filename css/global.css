@@ -10,7 +10,7 @@
 }
 
 body *, * *{
-    font-family: FontMan;
+    font-family: FontMan, Calibri;
 }
 /* colors */
 :root{
@@ -77,4 +77,9 @@ body *, * *{
 }
 .ff-calibri{
     font-family: calibri !important;
+}
+@media (max-width: 768px) {
+.text-xs {
+        font-size: 20px;
+    }
 }

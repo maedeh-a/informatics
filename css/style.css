@@ -1,12 +1,14 @@
 /* informatics */
-#intro{
+#intro {
     height: 100vh;
     height: 100svh;
     padding-block: 18%;
 }
-.img-container{
+
+.img-container {
     z-index: 2;
 }
+
 .img-container::after {
     content: " ";
     right: 0;
@@ -17,86 +19,102 @@
     z-index: 3;
     background: linear-gradient(-90deg, #0188bb 0%, transparent 84%)
 }
-.links-box .link-box{
+
+.links-box .link-box {
     width: 200px;
     height: 200px;
     transition: 0.2s;
 }
-.links-box .link-box *{
-    font-size: 1.7rem ;
+
+.links-box .link-box * {
+    font-size: 1.7rem;
 }
+
 .links-box .link-box.active,
 .links-box .link-box:hover {
     background-color: var(--blue);
 }
-.intro-text h1{
+
+.intro-text h1 {
     font-size: 4rem;
 }
 
-.h5847{
+.h5847 {
     height: 1px;
 }
+
 .description-step-box p,
 .description-step-box3 p {
     text-align: justify;
     line-height: 30px;
     font-weight: 600;
+    padding-bottom: 7%
 }
 
-.description-step-box p *{
+.description-step-box p * {
     text-align: justify;
 }
+
 .group-Informatics-step-box p,
 .description-step-box2 p {
     max-height: 320px;
-    text-align: justify;
     line-height: 25px;
     font-weight: bold;
+    text-align: justify;
 }
 
-.tabs{
+.tabs {
     min-height: 300px;
 }
-.tabs .steps-card .steps-box .steps-items.active *{
+
+.tabs .steps-card .steps-box .steps-items.active * {
     color: var(--bs-info) !important;
     font-size: 26px !important;
     white-space: nowrap;
 }
-.tabs .steps-card .steps-box .steps-items .steps-content{
-    border-bottom: 1px solid var(--bs-info) ;
+
+.tabs .steps-card .steps-box .steps-items .steps-content {
+    border-bottom: 1px solid var(--bs-info);
     transition: 0.2s;
 }
+
 .tabs .steps-card .steps-box .steps-items .steps-content:hover {
     padding-right: 8px;
 }
-#intro .img-bg{
+
+#intro .img-bg {
     inset: 0;
 }
+
 #intro .bg-opacity {
-    background-color:#1277d07a;
+    background-color: #1277d07a;
     inset: 0;
     position: absolute;
     height: 100%;
 }
+
 #intro .bg-opacity-gradient {
-    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(122, 126, 128, 0.5),#0188bb);
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(122, 126, 128, 0.5), #0188bb);
     inset: 0;
     position: absolute;
     height: 100%;
 }
-  
-.h451898.bg-blue900{
-    padding-right:15%;
+
+.h451898.bg-blue900 {
+    padding-right: 15%;
 }
-.h451898{
+
+.h451898 {
     clip-path: polygon(0% 0%, 85% 0%, 100% 25%, 100% 100%, 15% 100%, 0% 75%);
     height: 82%;
-    
+
 }
-.min250{
+
+.min250 {
     min-height: 250px;
 }
-#support .circle-text::after{
+
+#support .circle-text::after {
     position: absolute;
     content: " ";
     right: 0px;
@@ -106,32 +124,67 @@
     width: 10px;
     border-radius: 50%;
 }
-.img-support{
+
+.img-support {
     width: 600px;
 }
+
+.logos {
+    max-width: 720px;
+    margin-inline: auto;
+}
+
 /* end informatics */
 @media (max-width: 768px) {
     #intro {
-            padding-block: 30%;
-        }
-    body .description-step-box p, body .description-step-box3 p {
+        padding-block: 30%;
+    }
+
+    body .description-step-box p,
+    body .description-step-box3 p {
         column-count: 1;
         max-height: max-content;
     }
-        .img-support {
-            width: 320px;
-        }
-    
+
+    .img-support {
+        width: 320px;
+    }
+
     .links-box .link-box {
         width: 140px;
         height: 140px;
         transition: 0.2s;
     }
 
-        .intro-text h1{
-            font-size: 3rem;
-        }
-                .links-box .link-box * {
-                    font-size: 1.2rem;
-                }
+    .intro-text h1 {
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    .links-box .link-box * {
+        font-size: 1.2rem;
+    }
+
+    div.tabs .steps-card .steps-box .steps-items.active * {
+        font-size: 23px !important;
+    }
+
+    .group-Informatics-step-box p,
+    .description-step-box2 p {
+        line-height: 34px;
+    }
+    .group-Informatics-step-box p {
+        text-align: right;
+    }
+    div.footer-bar img {
+        height: 13px;
+        translate: 0 16px;
+    }
+}
+
+@media (min-width: 768px) {
+
+    * p {
+        line-height: 2;
+    }
 }
