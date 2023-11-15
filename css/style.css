@@ -99,7 +99,7 @@
 #support .circle-text::after{
     position: absolute;
     content: " ";
-    right: 29px;
+    right: 0px;
     top: 10px;
     background-color: var(--gray100);
     height: 10px;
