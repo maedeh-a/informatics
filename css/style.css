@@ -180,8 +180,10 @@
         height: 13px;
         translate: 0 16px;
     }
-    .head-step-box span {
-        font-size: 2.2rem !important;
+    .head-step-box span,
+    .dec-step-box span.text-info, 
+    .description-step-box span.text-info {
+        font-size: 1.65rem !important;
     }
 }
 
