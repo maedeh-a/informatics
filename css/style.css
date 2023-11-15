@@ -40,7 +40,6 @@
 .description-step-box3 p {
     text-align: justify;
     line-height: 30px;
-    font-size: 18px;
     font-weight: 600;
 }
 
@@ -52,7 +51,6 @@
     max-height: 320px;
     text-align: justify;
     line-height: 25px;
-    font-size: 18px;
     font-weight: bold;
 }
 
@@ -101,7 +99,7 @@
 #support .circle-text::after{
     position: absolute;
     content: " ";
-    right: -20px;
+    right: 29px;
     top: 10px;
     background-color: var(--gray100);
     height: 10px;
