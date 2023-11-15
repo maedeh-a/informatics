@@ -59,7 +59,7 @@
 }
 .tabs .steps-card .steps-box .steps-items.active *{
     color: var(--bs-info) !important;
-    font-size: 28px !important;
+    font-size: 26px !important;
     white-space: nowrap;
 }
 .tabs .steps-card .steps-box .steps-items .steps-content{
