@@ -9,8 +9,14 @@
         url('../font/BNazanin.woff') format('woff'),
 }
 
+/* Font */
+@font-face {
+    font-family: 'mcalibri';
+    src: url('../font/calibri.ttf') format('truetype'),
+        url('../font/calibri.woff') format('woff'),
+}
 body *, * *{
-    font-family: FontMan, Calibri;
+    font-family: FontMan, mcalibri;
 }
 /* colors */
 :root{
@@ -76,7 +82,7 @@ body *, * *{
     inset: 0;
 }
 .ff-calibri{
-    font-family: calibri !important;
+    font-family: mcalibri !important;
 }
 @media (max-width: 768px) {
 .text-xs {
