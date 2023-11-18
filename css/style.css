@@ -192,11 +192,11 @@
     }
 
     img[src*=hardware-and-network] {
-        object-position: 82%;
+        object-position: 73%;
     }
 
     img[src*=support] {
-        object-position: 21%;
+        object-position: 33%;
     }
     img[src*=virtual-banking] {
         object-position: 0%;
