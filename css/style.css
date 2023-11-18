@@ -175,19 +175,38 @@
     .description-step-box2 p {
         line-height: 34px;
     }
+
     .group-Informatics-step-box p {
         text-align: right;
     }
+
     div.footer-bar img {
         height: 13px;
         translate: 0 16px;
     }
+
     .head-step-box span,
-    .dec-step-box span.text-info, 
+    .dec-step-box span.text-info,
     .description-step-box span.text-info {
         font-size: 1.65rem !important;
     }
+
+    img[src*=hardware-and-network] {
+        object-position: 82%;
+    }
+
+    img[src*=support] {
+        object-position: 21%;
+    }
+    img[src*=virtual-banking] {
+        object-position: 0%;
+    }
+    img[src*=products_and_services] {
+        object-position: 15%;
+    }
 }
+
+@media (min-width: 768px) and (max-width: 992px) {}
 
 @media (min-width: 768px) {
 
